@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#EFF4F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="МОЙ ФУТБОЛ"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:textColor="#218354" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Новый матч"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#173B29"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохрани результат и свои достижения"
+            android:textSize="15sp"
+            android:textColor="#68796E"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О матче"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173B29" />
+
+            <Button
+                android:id="@+id/dateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Выбрать дату"
+                android:textAllCaps="false"
+                android:textColor="#173B29"
+                android:backgroundTint="#DFEBE3"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Команда соперника"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/opponentInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Например, Зенит"
+                android:inputType="textCapSentences"
+                android:maxLength="100"
+                android:textSize="16sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Счёт матча"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173B29" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Голы нашей команды"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/teamScoreInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Голы соперника"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/opponentScoreInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="20sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мой вклад"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173B29" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Забитые голы"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/goalsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="16sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Голевые передачи"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/assistsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="16sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Минуты на поле"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/minutesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Например, 90"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="16sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveMatchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Сохранить матч"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#218354"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Отмена"
+            android:textAllCaps="false"
+            android:textColor="#173B29"
+            android:backgroundTint="#DFEBE3"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#EFF4F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="МОЙ ФУТБОЛ"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:textColor="#218354" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Моя статистика"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#173B29"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Каждый матч — шаг вперёд"
+            android:textSize="15sp"
+            android:textColor="#68796E"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Карточка профиля -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Профиль игрока"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173B29" />
+
+            <TextView
+                android:id="@+id/profileText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Профиль пока не заполнен"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#218354"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Имя"
+                android:textSize="13sp"
+                android:textColor="#68796E" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Имя футболиста"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:textSize="16sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Номер на футболке"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/numberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Например, 10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="16sp"
+                android:textColor="#173B29"
+                android:textColorHint="#89988E"
+                android:backgroundTint="#B9CEC0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Игровая позиция"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="12dp" />
+
+            <Spinner
+                android:id="@+id/positionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#218354" />
+
+            <Button
+                android:id="@+id/saveProfileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Сохранить профиль"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#218354"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <!-- Карточка статистики -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Результаты на поле"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173B29" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="За все сыгранные матчи"
+                android:textSize="13sp"
+                android:textColor="#68796E"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/statisticsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Матчей: 0"
+                android:textSize="18sp"
+                android:textColor="#173B29"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <!-- Карточка месячной цели -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цель на месяц"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173B29" />
+
+            <TextView
+                android:id="@+id/goalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цель пока не установлена"
+                android:textSize="16sp"
+                android:textColor="#52685A"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="12dp" />
+
+            <ProgressBar
+                android:id="@+id/goalProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#218354"
+                android:progressBackgroundTint="#DFEBE3"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/editGoalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Настроить цель"
+                android:textAllCaps="false"
+                android:textColor="#173B29"
+                android:backgroundTint="#DFEBE3"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+        <!-- Основные действия -->
+
+        <Button
+            android:id="@+id/addMatchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="+ Добавить матч"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#218354"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="История матчей"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#173B29"
+            android:backgroundTint="#DFEBE3"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
